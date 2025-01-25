@@ -21,7 +21,6 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    
 }
 
 .stars {
@@ -48,22 +47,20 @@ body {
 }
 
 .container {
-    
     background: rgba(13, 17, 23, 0.85);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 90%;
     max-width: 500px;
-   
 }
 
 h1 {
     color: #fff;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
@@ -76,61 +73,78 @@ h1 {
 
 label {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
 input {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.05);
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 input:focus {
     outline: none;
     border-color: rgba(100, 149, 237, 0.5);
-    box-shadow: 0 0 15px rgba(100, 149, 237, 0.3);
+    box-shadow: 0 0 10px rgba(100, 149, 237, 0.3);
     background: rgba(255, 255, 255, 0.1);
 }
 
 input::placeholder {
     color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+.smtg {
+    background-color: rgb(91, 205, 167);
+    color: rgb(3, 5, 70);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin: 1rem auto;
+}
+
+.qrcont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 1.5rem;
     }
-    
+
     h1 {
         font-size: 1.5rem;
     }
-    
-    input {
-        font-size: 1rem;
-        padding: 0.8rem;
-    }
-}
 
-.smtg{
-    background-color: rgb(91, 205, 167);
-    animation-name:inherit;
-    color: rgb(3, 5, 70);
-    border-radius: 10px;
-    width: 415px;
-    height: 50px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 1.8s ease;
-}
-.qrcont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    input {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .smtg {
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .qrcont {
+        margin-top: 0.5rem;
+    }
 }
